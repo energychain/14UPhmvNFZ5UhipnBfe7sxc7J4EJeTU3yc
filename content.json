@@ -545,10 +545,10 @@
  },
  "ignore": "",
  "inner_path": "content.json",
- "modified": 1536152122,
+ "modified": 1536155722,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
-  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "GxL5MOjTDTE8t/ozJhAw7Og3buFJ1Y203oLpwWOy10nPNdiahuhUwvcqnxFumEirI4WM8lVeimGsmf2PAfV44iM="
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G7Zz67VXYIHt1lHn5rD9/qsKqjOXLsl/AxNOBzs+i7Z4YrlQp5huNv6VNkiUVr3p4qtoGPTQl4E08L0vrWG7Q+4="
  },
  "signs_required": 1,
  "title": "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc - ZeroNet_",
