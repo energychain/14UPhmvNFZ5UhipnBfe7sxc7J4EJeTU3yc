@@ -222,6 +222,14 @@
    "sha512": "519b299dbb059996113fb63e89b2519ee8c685604853c7c71dd1b5f9f9ad4f45",
    "size": 41
   },
+  "0xabbd396e4e96517a63a834a3177f8b2809e1bd6682547f1d07bc5bf8073a99d3.html": {
+   "sha512": "2866eed47a348f5966d9ecc2f4c23c25c4ff46380c493f3322afec99aedf37ee",
+   "size": 10442
+  },
+  "0xc24f09705a3c5aec517bfad76761e05f6701cf75b5b7652da13b6e5279e47617.html": {
+   "sha512": "9cb28114397927b5a54970e3a849dff21cc4ad247a74ca7bd7f4134a5102e24b",
+   "size": 10477
+  },
   "assets/0xabbd396e4e96517a63a834a3177f8b2809e1bd6682547f1d07bc5bf8073a99d3.html": {
    "sha512": "e2ee6f082f95d937670eba625853de491c489aa54a669450f6d38e48b5e97eb1",
    "size": 9113
@@ -238,9 +246,13 @@
    "sha512": "43b47f01b8ad0e5ac13871b5e9d5f805590dac3781418093709a47df124ffb40",
    "size": 3529
   },
+  "assets/abbd396e4e96517a63a834a3177f8b2809e1bd6682547f1d07bc5bf8073a99d3.html": {
+   "sha512": "e2ee6f082f95d937670eba625853de491c489aa54a669450f6d38e48b5e97eb1",
+   "size": 9113
+  },
   "assets/app.js": {
-   "sha512": "2bf281e4c7b402d9e1c9d7499424d8727f5cd98f4f0a6db7bc96837d083dc0f5",
-   "size": 6393
+   "sha512": "9c295c4a70bb8d59d87ed31953cc024f5ef125d4b0b5dbaebe85c60fa0a41ee2",
+   "size": 6400
   },
   "assets/art.bundle.min.js": {
    "sha512": "98c5f0ebba1c53773728b5bda6966419114bd290bb990a5ed5123dd04fef6572",
@@ -305,6 +317,10 @@
   "assets/bootstrap.min.js.map": {
    "sha512": "1ae360a198d71338223b296274ba5951617a5d044f0cdcf2c4585bf3e8134ee1",
    "size": 176087
+  },
+  "assets/c24f09705a3c5aec517bfad76761e05f6701cf75b5b7652da13b6e5279e47617.html": {
+   "sha512": "bbbed5ccf75d5a9f6b1636a76616979ca713ac49af25f2ecd9cf4dc6ef7fd2af",
+   "size": 9131
   },
   "assets/fontawesome-free.min.css": {
    "sha512": "e9ce275f6b67e4a6f3781268f58c296b41a4b7e9b30b3241ac4d5107a7e6a5cb",
@@ -375,12 +391,16 @@
    "size": 4701
   },
   "data/asset_0480269a2bdb421b9f85e0f353e63c06.json": {
-   "sha512": "bf4edfc47f5d94b2d150e528eba0857a1bf483598246c1e635fad8a8a1b41dff",
+   "sha512": "839a3d6ad657730043c47f9871e2795d4b2f15f95ac5af24366292de17b09779",
    "size": 17351
   },
   "data/asset_0c56adc82680493f946599a2f00c1d6d.json": {
-   "sha512": "cbcdd947a6256352647b5a1876ab5a818d2943856d0bdd5e2b5c78406b0afa22",
+   "sha512": "61c45902f256e30eb4428b5d920495bcaa35014eefe72374cd628eff71320c9d",
    "size": 6829
+  },
+  "data/c.json": {
+   "sha512": "09d2515a50915dbff5c90ab225f5f37010eae31c78da4d0f292dd52e0b23fb8d",
+   "size": 1488
   },
   "data/data/asset_0480269a2bdb421b9f85e0f353e63c06.json": {
    "sha512": "bf4edfc47f5d94b2d150e528eba0857a1bf483598246c1e635fad8a8a1b41dff",
@@ -411,23 +431,35 @@
    "size": 878
   },
   "data/gnature.json": {
-   "sha512": "77dab04ca434fb881b5eea8e62a43f64baa4a61edae523f7bb660460f09b8f79",
+   "sha512": "ccf669a33b3a5fd0dedd8b4416c763ab7bf0169a7a45fc09c7dd2ec7f95b9cdb",
    "size": 224
+  },
+  "data/hangerate.json": {
+   "sha512": "7d4ba17dabdc7ac3d8191afd57849b6764961f7a6eb2d9debb037d7a7af9daf0",
+   "size": 878
   },
   "data/kyc.json": {
    "sha512": "09d2515a50915dbff5c90ab225f5f37010eae31c78da4d0f292dd52e0b23fb8d",
    "size": 1488
   },
   "data/performance.json": {
-   "sha512": "7bda7e20f9fbba9702f81dc5967209fbaff9f7914f93aeab65a044244ef7a5dd",
+   "sha512": "93f89916078faa5c31e83ab68c90cc4e380c3a89fe3cec0847aea08a0170d69a",
    "size": 3110
   },
   "data/rformance.json": {
-   "sha512": "7bda7e20f9fbba9702f81dc5967209fbaff9f7914f93aeab65a044244ef7a5dd",
+   "sha512": "93f89916078faa5c31e83ab68c90cc4e380c3a89fe3cec0847aea08a0170d69a",
    "size": 3110
   },
+  "data/set_0480269a2bdb421b9f85e0f353e63c06.json": {
+   "sha512": "bf4edfc47f5d94b2d150e528eba0857a1bf483598246c1e635fad8a8a1b41dff",
+   "size": 17351
+  },
+  "data/set_0c56adc82680493f946599a2f00c1d6d.json": {
+   "sha512": "cbcdd947a6256352647b5a1876ab5a818d2943856d0bdd5e2b5c78406b0afa22",
+   "size": 6829
+  },
   "data/signature.json": {
-   "sha512": "77dab04ca434fb881b5eea8e62a43f64baa4a61edae523f7bb660460f09b8f79",
+   "sha512": "ccf669a33b3a5fd0dedd8b4416c763ab7bf0169a7a45fc09c7dd2ec7f95b9cdb",
    "size": 224
   },
   "data/trunches.json": {
@@ -513,10 +545,10 @@
  },
  "ignore": "",
  "inner_path": "content.json",
- "modified": 1536140438,
+ "modified": 1536141348,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
-  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "GxbtFMK/bchsq9+YWnRRvTZJHTEiVsyvoSpmur7utW5dBv/Nby1zF85QmSj/+STbJQTUxojIP8tEYdMBYiVNKk8="
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "HGZ1eGHARYhNIK/wWYyIQlh0ZKwLhUMocBSBCFfeMstFD5CcKt4OmA+O23xe9ez9VlYVnmbYmcTsrz2FMClcLKw="
  },
  "signs_required": 1,
  "title": "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc - ZeroNet_",
