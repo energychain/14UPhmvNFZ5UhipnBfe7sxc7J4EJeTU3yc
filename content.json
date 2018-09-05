@@ -521,10 +521,17 @@
  },
  "ignore": "",
  "inner_path": "content.json",
+<<<<<<< HEAD
  "modified": 1536111485,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
   "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G2knYCay2TtBKBU3NuWYymHIp6o5OOC4pyRFDB4a3KJnELCcBl7pcFzGk8VMDc2f8IyRIG2ZL7+szx3CMJK22vA="
+=======
+ "modified": 1536110710,
+ "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
+ "signs": {
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G58uQ+OvA6/5s3weoohC4yMcD1XeEzUOwPVTikHagRjZZBCyTWIwUOLQn54dGOXDThCXAJNfNM5jG2oM2S5HAuk="
+>>>>>>> ef34e2ad2f94c7d7f359b42aef9c3cb6a3f43185
  },
  "signs_required": 1,
  "title": "Corrently Corp - Market Monitor",
