@@ -198,11 +198,7 @@ const updatePerformance=function(data) {
             html+="<td>"+tx.blockNumber+"</td>";
             html+="<td>"+tx.recipient+"</td>";
             html+="<td>"+tx.tokens+"</td>";
-<<<<<<< HEAD
-            html+="<td class='text-truncated'><a href='./"+tx.transactionHash+".html'>"+tx.transactionHash.substr(0,12)+"...</a></td>";
-=======
             html+="<td class='text-truncated'><a href='./assets/"+tx.transactionHash+".html'>"+tx.transactionHash.substr(0,12)+"...</a></td>";
->>>>>>> ef34e2ad2f94c7d7f359b42aef9c3cb6a3f43185
             html+="</tr>"
             $('#assetList').append(html);
         }
