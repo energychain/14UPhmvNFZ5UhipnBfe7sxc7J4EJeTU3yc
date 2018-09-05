@@ -251,8 +251,8 @@
    "size": 9113
   },
   "assets/app.js": {
-   "sha512": "9c295c4a70bb8d59d87ed31953cc024f5ef125d4b0b5dbaebe85c60fa0a41ee2",
-   "size": 6400
+   "sha512": "2bf281e4c7b402d9e1c9d7499424d8727f5cd98f4f0a6db7bc96837d083dc0f5",
+   "size": 6393
   },
   "assets/art.bundle.min.js": {
    "sha512": "98c5f0ebba1c53773728b5bda6966419114bd290bb990a5ed5123dd04fef6572",
@@ -391,11 +391,11 @@
    "size": 4701
   },
   "data/asset_0480269a2bdb421b9f85e0f353e63c06.json": {
-   "sha512": "839a3d6ad657730043c47f9871e2795d4b2f15f95ac5af24366292de17b09779",
+   "sha512": "bf4edfc47f5d94b2d150e528eba0857a1bf483598246c1e635fad8a8a1b41dff",
    "size": 17351
   },
   "data/asset_0c56adc82680493f946599a2f00c1d6d.json": {
-   "sha512": "61c45902f256e30eb4428b5d920495bcaa35014eefe72374cd628eff71320c9d",
+   "sha512": "cbcdd947a6256352647b5a1876ab5a818d2943856d0bdd5e2b5c78406b0afa22",
    "size": 6829
   },
   "data/c.json": {
@@ -443,7 +443,7 @@
    "size": 1488
   },
   "data/performance.json": {
-   "sha512": "93f89916078faa5c31e83ab68c90cc4e380c3a89fe3cec0847aea08a0170d69a",
+   "sha512": "7bda7e20f9fbba9702f81dc5967209fbaff9f7914f93aeab65a044244ef7a5dd",
    "size": 3110
   },
   "data/rformance.json": {
@@ -459,7 +459,7 @@
    "size": 6829
   },
   "data/signature.json": {
-   "sha512": "ccf669a33b3a5fd0dedd8b4416c763ab7bf0169a7a45fc09c7dd2ec7f95b9cdb",
+   "sha512": "77dab04ca434fb881b5eea8e62a43f64baa4a61edae523f7bb660460f09b8f79",
    "size": 224
   },
   "data/trunches.json": {
@@ -545,10 +545,10 @@
  },
  "ignore": "",
  "inner_path": "content.json",
- "modified": 1536141348,
+ "modified": 1536149775,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
-  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "HGZ1eGHARYhNIK/wWYyIQlh0ZKwLhUMocBSBCFfeMstFD5CcKt4OmA+O23xe9ez9VlYVnmbYmcTsrz2FMClcLKw="
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G2xmVYL5QFlhzbNhLB4rMT4whA/7iwryjoe81VZ22lXOYjt0+zwZf9Nrjvxbr9yS7PdTDdO76QkSIjBHSaF2DQA="
  },
  "signs_required": 1,
  "title": "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc - ZeroNet_",
