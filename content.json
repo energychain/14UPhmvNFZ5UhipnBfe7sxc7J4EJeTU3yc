@@ -75,11 +75,11 @@
    "size": 4701
   },
   "data/asset_0480269a2bdb421b9f85e0f353e63c06.json": {
-   "sha512": "4607aa1cdcb1f4c594fbd719cf6d8375c7699d9c1688707fe2db7d282fe2f862",
+   "sha512": "ab7dc59acebf05d1477d21f5c86bf684ead483a52b75bd7104929580fcd5d492",
    "size": 17351
   },
   "data/asset_0c56adc82680493f946599a2f00c1d6d.json": {
-   "sha512": "4553e47197ca5680d73984c9c1572947905fd25f1ec2a07d36a88ca78f5a2b55",
+   "sha512": "a680e88d2b198b77918b041fd56c1a1c2be7e2e675aa31ab686b867e4b5a7683",
    "size": 6829
   },
   "data/kyc.json": {
@@ -87,8 +87,8 @@
    "size": 1488
   },
   "data/performance.json": {
-   "sha512": "e2d639dc6eb1bdb73d7ba50357a81a16fae8dcd0ce7d80126e4c2aa61d17f74b",
-   "size": 3101
+   "sha512": "d82cae2d88020c0e5afecff54261589e98c076ad0b86fc12965388f715931c0c",
+   "size": 3110
   },
   "data/signature.json": {
    "sha512": "c9252bd6589ba787f94bb396eda475ea13e04ddd18fdb4710d94a1c62284f3f8",
@@ -141,10 +141,10 @@
  },
  "ignore": "",
  "inner_path": "content.json",
- "modified": 1536194254,
+ "modified": 1536195321,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
-  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "HHh6nXFR6QEjm7qj52BO/A+itVBCwwIlnM4PdZAHdlwbMXuViKpKDP7b4c6eXqvWLIPwxqDKJENbgOjypzmzQPI="
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G0I8mlJQEppsS72pq5rCrEiSMR9S2xte2HzRHgdqdTiERzvCZIbPnbn9Rg8IhKGNGwpklIWl3Wlc6EMgw/RbowI="
  },
  "signs_required": 1,
  "title": "Corrently Corp",
