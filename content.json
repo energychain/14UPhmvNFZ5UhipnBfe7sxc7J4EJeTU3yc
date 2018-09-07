@@ -87,11 +87,11 @@
    "size": 1488
   },
   "data/performance.json": {
-   "sha512": "d82cae2d88020c0e5afecff54261589e98c076ad0b86fc12965388f715931c0c",
-   "size": 3110
+   "sha512": "051a42f8a3b1700fed96b90c25ce6f1a7e5f9dd623ad0472e3fcdce59952e4aa",
+   "size": 3115
   },
   "data/signature.json": {
-   "sha512": "c9252bd6589ba787f94bb396eda475ea13e04ddd18fdb4710d94a1c62284f3f8",
+   "sha512": "7065dafdcde6c00236a3cfe2f268aef8e57dc1114a5d8fc4e9c5c2a61fae24ad",
    "size": 224
   },
   "data/trunches.json": {
@@ -141,10 +141,10 @@
  },
  "ignore": "",
  "inner_path": "content.json",
- "modified": 1536306934,
+ "modified": 1536307634,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
-  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G8w2qg24Kni22Zjcr6Uv2vVfMe4erLu1TLQTCSg9RL1nFTft7X6WXMUhrBjzqz7T3e/C5FhePcm7Bv57oS4AkJI="
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "HGNksu8UVsHwsj0biGc9A1Vy5TV07WxYFOLX7ZxFx+KHH/mFet/QQneVu3ZgA2ctfeXKCVibOQQ5hl/GAx3CWL4="
  },
  "signs_required": 1,
  "title": "Corrently Corp",
