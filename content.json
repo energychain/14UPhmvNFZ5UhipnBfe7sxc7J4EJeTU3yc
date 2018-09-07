@@ -141,10 +141,10 @@
  },
  "ignore": "",
  "inner_path": "content.json",
- "modified": 1536310523,
+ "modified": 1536315171,
  "signers_sign": "GwSyXOxuyQh+hdRe6fffcjc8RpIs60SwDmkWNGBUhj2PM5QT4HLZasA/RhPXb8RYXZkatdX74QIYcTzto9Br258=",
  "signs": {
-  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "G/BT6KQ0hiReOrgz32kfCsvG5UF7MRe0n0wLuQkNDD/FAUJtaI3inns+xHC/aECuTL0GuUXiDtnbz5DhrhYMzmE="
+  "14UPhmvNFZ5UhipnBfe7sxc7J4EJeTU3yc": "HNl9+SD5hVoY/cP6UjQEHhHJTMWEQ0vPRKDKdToj5w3ABK3v1T6TgXLIZTtuLHeoyWAnrVpHRIwQi0khinjnjfg="
  },
  "signs_required": 1,
  "title": "Corrently Corp",
