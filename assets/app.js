@@ -196,7 +196,7 @@ const updatePerformance=function(data) {
             let html ="";
             html+="<tr id='trunch_"+tx.blockNumber+"'>";
             html+="<td>"+tx.blockNumber+"</td>";
-            html+="<td><a href='/1Je38yuYsbWhFMEsTrgMtMGW1xhnAkghhb/'>"+tx.recipient+"</a></td>";
+            html+="<td><a href='/epiktet.bit/'>"+tx.recipient+"</a></td>";
             html+="<td>"+tx.tokens+"</td>";
             html+="<td class='text-truncated'><a href='./"+tx.transactionHash+".html'>"+tx.transactionHash.substr(0,12)+"...</a></td>";
             html+="</tr>"
