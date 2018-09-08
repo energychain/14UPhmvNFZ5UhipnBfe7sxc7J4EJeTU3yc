@@ -205,6 +205,7 @@ const updatePerformance=function(data) {
 
       });
   });
+  
 }
 
 window.zeroLoader=function(url,cb) {
