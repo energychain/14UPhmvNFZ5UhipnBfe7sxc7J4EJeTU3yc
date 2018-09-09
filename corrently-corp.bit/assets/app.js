@@ -205,7 +205,7 @@ const updatePerformance=function(data) {
 
       });
   });
-  
+
 }
 
 window.zeroLoader=function(url,cb) {
@@ -235,5 +235,34 @@ $(document).ready(()=> {
           updatePerformance(data);
       }
    });
+   function buy() {
+                 AirSwap.Trader.render({
+                     env: 'sandbox',
+                     mode: 'buy',
+                     token: '0x725b190bc077ffde17cf549aa8ba25e298550b18',
+                     amount: 5 * (10 ** 4),
+                     onCancel: function () {
+                         console.info('Trade was canceled.');
+                     },
+                     onComplete: function(transactionId) {
+                         console.info('Trade complete. Thank you, come again.');
+                     }
+                 }, 'body');
+               }
 
+  function sell() {
+                 AirSwap.Trader.render({
+                     env: 'sandbox',
+                     mode: 'sell',
+                     token: '0x725b190bc077ffde17cf549aa8ba25e298550b18',
+                     onCancel: function () {
+                         console.info('Trade was canceled.');
+                     },
+                     onComplete: function(transactionId) {
+                         console.info('Trade complete. Thank you, come again.');
+                     }
+                 }, 'body');
+  }
+  $('#buybtn').click(buy);
+  $('#sellbtn').click(sell);
 });
