@@ -70,7 +70,19 @@
                     <li>Ethereum (Main) Blockchain (Homestead)</li>
                     <li>Standard: ERC20</li>
                     </ul>
-                    <button class="btn btn-success" id="buybtn">Buy</button>
+                    <button class="btn btn-success" id="buybtn" onclick="AirSwap.Trader.render({
+                         env: 'sandbox',
+                         mode: 'buy',
+                         token: '0x725b190bc077ffde17cf549aa8ba25e298550b18',
+                         amount: 5 * (10 ** 4),
+                         onCancel: function () {
+                             console.info('Trade was canceled.');
+                         },
+                         onComplete: function(transactionId) {
+                             console.info('Trade complete. Thank you, come again.');
+                         }
+                     }, 'body');
+                   }">Buy</button>
 
                     <span class="dropdown">
                     <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
@@ -82,7 +94,17 @@
                       <a class="dropdown-item" href="https://token.store/trade/0x725b190bc077ffde17cf549aa8ba25e298550b18" target="_blank">on TokenStore</a>
                     </div>
                   </span>
-                    <button class="btn btn-danger" id="sellbtn">Sell</button>
+                    <button class="btn btn-danger" id="sellbtn" onclick="   AirSwap.Trader.render({
+                           env: 'sandbox',
+                           mode: 'sell',
+                           token: '0x725b190bc077ffde17cf549aa8ba25e298550b18',
+                           onCancel: function () {
+                               console.info('Trade was canceled.');
+                           },
+                           onComplete: function(transactionId) {
+                               console.info('Trade complete. Thank you, come again.');
+                           }
+                       }, 'body');">Sell</button>
                     </div>
                 </div>
             <div class="card" style="">
