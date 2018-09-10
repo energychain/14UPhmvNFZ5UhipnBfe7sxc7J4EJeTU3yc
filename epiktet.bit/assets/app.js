@@ -177,13 +177,14 @@ const multiPerformanceLineChart=function(id,data,title) {
 
 
 const updatePerformance=function(data) {
+  if(typeof window.txlog == "undefined") {
+    window.txlog=[];
   //$('#timeStamp').html(moment(new Date(data.timestamp)).format());
   // {field:'EASYMETER_60407791',label:'Asset ID a99d3'},{field:'EASYMETER_1024000045',label:'Asset ID 47617'}
   performanceLineChart('dataChart',data.history,'Total OTG',[],data);
   var html="<table class='table table-striped'>";
   html+="<tr><th>Asset ID</th><th>Entitled CORI</th><th>OTG Performance</th><th>Contracting</th></tr>";
   $.each(data.sides,(key,side) => {
-      console.log(side);
       var i=0;
       var p=0;
       $.each(side.history,function(k,pp) {
@@ -202,11 +203,10 @@ const updatePerformance=function(data) {
   if(typeof data.timestamp != "undefined") {
     $('#timeStamp').html(moment(new Date(data.timestamp)).format());
   }
-  if(typeof window.txlog == "undefined") {
-    window.txlog=[];
+
       window.jsonLoader("./data/chain.json",function(chain) {
         window.txlog=chain;
-        console.log("CHAIN",chain);
+        console.log("CHAIN2",chain);
 
         var balance=0;
         rows=[];
@@ -220,7 +220,7 @@ const updatePerformance=function(data) {
           } else {
             balance+=tx.tokens;
           }
-          rows.push("<tr><td>"+tx.blockNumber+"</td><td>"+tx.sender+"<br/>"+tx.recipient+"</td><td style='text-align:right;color:"+color+"'>"+tx.tokens.toFixed(2)+"</td><td style='text-align:right'>"+balance.toFixed(2)+"</td></tr>");
+          rows.push("<tr><td>"+tx.blockNumber+"</td><td><a href='https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a="+tx.sender+"' target='_blank'>"+tx.sender+"</a><br/><a href='https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a="+tx.recipient+"' target='_blank'>"+tx.recipient+"</a></td><td style='text-align:right;color:"+color+"'>"+tx.tokens.toFixed(2)+"</td><td style='text-align:right'>"+balance.toFixed(2)+"</td></tr>");
         }
         rows=rows.reverse();
         var html="<table class='table table-striped'>";
