@@ -177,12 +177,11 @@ const multiPerformanceLineChart=function(id,data,title) {
 
 
 const updatePerformance=function(data) {
-  //$('#timeStamp').html(moment(new Date(data.timestamp)).format());
-  console.log("DATA3",data);
-  // {field:'EASYMETER_60407791',label:'Asset ID a99d3'},{field:'EASYMETER_1024000045',label:'Asset ID 47617'}
+  if(typeof window.txlog == "undefined") {
+    window.txlog=[];
   performanceLineChart('dataChart',data.history,'Total OTC',[],data);
   var html="<table class='table table-striped'>";
-  html+="<tr><th>Predicted CORI</th><th>OTC Performance</th></tr>";
+  html+="<tr><th>(Sub-)Portfolio ID</th><th>CORI (per year)</th><th>OTC Performance</th></tr>";
   $.each(data.sides,(key,side) => {
       console.log(side);
       var i=0;
@@ -192,6 +191,7 @@ const updatePerformance=function(data) {
           p+=pp;
       })
       html+="<tr>";
+      html+="<td>"+side.label+"</td>";
       html+="<td>"+side.shares+"</td>";
       html+="<td>"+((p*100)/i).toFixed(2)+"%</td>";
       html+="</tr>";
@@ -199,6 +199,36 @@ const updatePerformance=function(data) {
   html+="</table>";
   $('#assets').html(html);
 
+  window.jsonLoader("./data/chain.json",function(chain) {
+    window.txlog=chain;
+    console.log("CHAIN2",chain);
+
+    var balance=0;
+    rows=[];
+    for(txid in chain) {
+      var tx=chain[txid];
+      let color='#000000';
+      if(tx.sender.toLowerCase()=="0xfa21fb716322ee4ebbec6aefb9208a428e0b56f4") {
+        balance-=tx.tokens;
+        color='#ff0000';
+        tx.tokens*=-1;
+      } else {
+        balance+=tx.tokens;
+      }
+      rows.push("<tr><td>"+tx.blockNumber+"</td><td><a href='https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a="+tx.sender+"' target='_blank'>"+tx.sender+"</a><br/><a href='https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a="+tx.recipient+"' target='_blank'>"+tx.recipient+"</a></td><td style='text-align:right;color:"+color+"'>"+tx.tokens.toFixed(2)+"</td><td style='text-align:right'>"+balance.toFixed(2)+"</td></tr>");
+    }
+    $('#coribalance').html(balance.toFixed(2));
+    rows=rows.reverse();
+    var html="<table class='table table-striped'>";
+    html+="<tr><th>Consensus</th><th>From<br/>To</th><th style='text-align:right'>Amount</th><th style='text-align:right'>Balance</th></tr>";
+    for(rowid in rows) {
+      html+=rows[rowid];
+    }
+    html+="</table>";
+    $('#txs').html(html);
+  })
+
+  }
 }
 
 window.zeroLoader=function(url,cb) {
