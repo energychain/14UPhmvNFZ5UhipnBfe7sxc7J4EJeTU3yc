@@ -178,7 +178,6 @@ const multiPerformanceLineChart=function(id,data,title) {
 
 const updatePerformance=function(data) {
   //$('#timeStamp').html(moment(new Date(data.timestamp)).format());
-  console.log("DATA3",data);
   // {field:'EASYMETER_60407791',label:'Asset ID a99d3'},{field:'EASYMETER_1024000045',label:'Asset ID 47617'}
   performanceLineChart('dataChart',data.history,'Total OTG',[],data);
   var html="<table class='table table-striped'>";
@@ -203,9 +202,36 @@ const updatePerformance=function(data) {
   if(typeof data.timestamp != "undefined") {
     $('#timeStamp').html(moment(new Date(data.timestamp)).format());
   }
-  window.jsonLoader("./data/chain.json",function(chain) {
-    console.log(chain);
-  })
+  if(typeof window.txlog == "undefined") {
+    window.txlog=[];
+      window.jsonLoader("./data/chain.json",function(chain) {
+        window.txlog=chain;
+        console.log("CHAIN",chain);
+
+        var balance=0;
+        rows=[];
+        for(txid in chain) {
+          var tx=chain[txid];
+          let color='#000000';
+          if(tx.sender.toLowerCase()=="0x445c1e284c15a50a69fe7d6dcd9fba3b938b52bb") {
+            balance-=tx.tokens;
+            color='#ff0000';
+            tx.tokens*=-1;
+          } else {
+            balance+=tx.tokens;
+          }
+          rows.push("<tr><td>"+tx.blockNumber+"</td><td>"+tx.sender+"<br/>"+tx.recipient+"</td><td style='text-align:right;color:"+color+"'>"+tx.tokens.toFixed(2)+"</td><td style='text-align:right'>"+balance.toFixed(2)+"</td></tr>");
+        }
+        rows=rows.reverse();
+        var html="<table class='table table-striped'>";
+        html+="<tr><th>Consensus</th><th>From<br/>To</th><th style='text-align:right'>Amount</th><th style='text-align:right'>Balance</th></tr>";
+        for(rowid in rows) {
+          html+=rows[rowid];
+        }
+        html+="</table>";
+        $('#txs').html(html);
+      })
+  }
 }
 
 window.zeroLoader=function(url,cb) {
