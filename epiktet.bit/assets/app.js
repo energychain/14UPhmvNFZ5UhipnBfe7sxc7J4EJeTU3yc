@@ -203,7 +203,9 @@ const updatePerformance=function(data) {
   if(typeof data.timestamp != "undefined") {
     $('#timeStamp').html(moment(new Date(data.timestamp)).format());
   }
-
+  window.jsonLoader("./data/chain.json",function(chain) {
+    console.log(chain);
+  })
 }
 
 window.zeroLoader=function(url,cb) {
