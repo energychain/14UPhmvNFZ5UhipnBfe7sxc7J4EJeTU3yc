@@ -269,6 +269,7 @@ $(document).ready(()=> {
 // Web3 Stuff
 
 const startWeb3App = function() {
+  $('#web3handling').show();
   console.log("We have web3",web3);
   const xrate=0.1;
   $('#amount_cori').on('change',function() {
