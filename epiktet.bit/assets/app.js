@@ -222,6 +222,7 @@ const updatePerformance=function(data) {
           }
           rows.push("<tr><td>"+tx.blockNumber+"</td><td><a href='https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a="+tx.sender+"' target='_blank'>"+tx.sender+"</a><br/><a href='https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a="+tx.recipient+"' target='_blank'>"+tx.recipient+"</a></td><td style='text-align:right;color:"+color+"'>"+tx.tokens.toFixed(2)+"</td><td style='text-align:right'>"+balance.toFixed(2)+"</td></tr>");
         }
+        $('#coribalance').html(balance.toFixed(2));
         rows=rows.reverse();
         var html="<table class='table table-striped'>";
         html+="<tr><th>Consensus</th><th>From<br/>To</th><th style='text-align:right'>Amount</th><th style='text-align:right'>Balance</th></tr>";
@@ -265,3 +266,41 @@ $(document).ready(()=> {
    });
 
 });
+// Web3 Stuff
+
+const startWeb3App = function() {
+  console.log("We have web3",web3);
+  const xrate=0.1;
+  $('#amount_cori').on('change',function() {
+      if($('#amount_cori').val()<0.01) $('#amount_cori').val(0.01);
+      $('#amount_eth').val($('#amount_cori').val()*xrate);
+  });
+  $('#amount_eth').on('change',function() {
+      $('#amount_cori').val($('#amount_eth').val()/xrate);
+  });
+  $('#buy').click(function() {
+    const eth = web3.eth;
+    const ethAmount=$('#amount_cori').val()*xrate;
+    eth.sendTransaction({from:eth.coinbase, to:'0x61bdd888b3bd3f8466a4fb2e16435e917cd458a0', value: web3.toWei(ethAmount, "ether")},function(t) {
+      console.log(t);
+    });
+  });
+}
+
+
+window.addEventListener('load', function() {
+
+  // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+  if (typeof web3 !== 'undefined') {
+    // Use Mist/MetaMask's provider
+    web3js = new Web3(web3.currentProvider);
+  } else {
+    console.log('No web3? You should consider trying MetaMask!')
+    // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+    web3js = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+  }
+
+  // Now you can start your app & access web3 freely:
+  startWeb3App()
+
+})

@@ -84,6 +84,10 @@
                           <td>Ethereum ID</td>
                           <td><a href="https://etherscan.io/token/0x725b190bc077ffde17cf549aa8ba25e298550b18?a=0x445c1e284c15a50a69fe7d6dcd9fba3b938b52bb" target="_blank" class="text-truncated">0x445c1e284c15a50a69fe7d6dcd9fba3b938b52bb</a></td>
                       </tr>
+                      <tr>
+                          <td>Balance</td>
+                          <td><span id="coribalance">-</span> CORI</td>
+                      </tr>
                     </table>
                     </div>
                   </div>
@@ -93,9 +97,34 @@
               </div>
               <canvas id="dataChart" class="card-img-top" style="padding-top:3px;min-height:200px;min-width:450px"></canvas>
               <div class="card-body">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="amount_cori" value="0.01" aria-describedby="cori-addon">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="cori-addon">CORI</span>
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="amount_eth" value="0.01" aria-describedby="eth-addon">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="eth-addon">ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col">
+                        <button id="buy" class="btn btn-primary btn-sm">Buy CORI</button>
+                      </div>
+                  </div>
+                  <small>
+                    Trade will be handled by Smart Contract <a href="https://etherscan.io/address/0x61bdd888b3bd3f8466a4fb2e16435e917cd458a0" target="_blank">0x61bdd888b3bd3f8466a4fb2e16435e917cd458a0</a> as an <em>Over-The-Counter</em> trade. You receive CORI after execution directly to your wallet.
+                  </small>
+                </div>
                    <div id="assets">
                    </div>
               </div>
+
             </div>
         </div>
         <div class="card-group">
